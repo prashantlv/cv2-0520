@@ -1,14 +1,3 @@
-# -*- coding: utf-8 -*-
-"""6_5. Accuracy and Misclassification.ipynb
-
-
-The day/night image dataset consists of 200 RGB color images in two categories: day and night. There are equal numbers of each example: 100 day images and 100 night images.
-
-We'd like to build a classifier that can accurately label these images as day or night, and that relies on finding distinguishing features between the two types of images!
-
-*Note: All images come from the [AMOS dataset](http://cs.uky.edu/~jacobs/datasets/amos/) (Archive of Many Outdoor Scenes).*
-
-"""
 import cv2 # computer vision library
 import helpers
 import numpy as np
@@ -17,14 +6,6 @@ import matplotlib.image as mpimg
 
 image_dir_training = "day_night_images/training/"
 image_dir_test = "day_night_images/test/"
-
-"""## Load the datasets
-
-These first few lines of code will load the training day/night images and store all of them in a variable, `IMAGE_LIST`. This list contains the images and their associated label ("day" or "night"). 
-
-For example, the first image-label pair in `IMAGE_LIST` can be accessed by index: 
-``` IMAGE_LIST[0][:]```.
-"""
 
 # Using the load_dataset function in helpers.py
 # Load training data
